@@ -1,6 +1,6 @@
 package com.sky.inheritance;
 
-public class Vehicles extends Object {
+public abstract class Vehicles extends Object {
 
 
 
@@ -30,9 +30,8 @@ public class Vehicles extends Object {
         this.noOfPrevOwners = noOfPrevOwners;
         this.noOfWheels = noOfWheels;
     }
- public double calculateBill(){
-        return 10;
- }
+    public abstract double calculateBill();
+
     public int getId() {
         return id;
     }
