@@ -40,8 +40,8 @@ public class Garage {
     }
 
 
-    public void addVehicle (){
-        myVehicles.add();
+    public void addVehicle (Vehicles ve){
+        myVehicles.add(ve);
     }
     public  void removeVehicle (int id) throws VehicleNotFoundException{
         for(Vehicles v:this.myVehicles){
@@ -72,7 +72,7 @@ public class Garage {
 
             switch (choice) {
                 case 1:
-                    addVehicle();
+//                    addVehicle();
                     break;
                 case 2:
                     removeVehicle(2);
@@ -90,6 +90,15 @@ public class Garage {
     }
 
 
+    private void calculateBill() {
+        // Implement the logic to calculate the bill for vehicles in the garage
+        // For example:
+        double totalBill = 0.0;
+        for (Vehicles v : myVehicles) {
+            // Calculate bill for each vehicle and add it to the totalBill
+        }
+        System.out.println("Total Bill: " + totalBill);
+    }
 
     public void closeScanner() {
         scanner.close();

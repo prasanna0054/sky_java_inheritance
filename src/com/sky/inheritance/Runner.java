@@ -29,7 +29,7 @@ public class Runner {
 //            }
 
 
-        int vehicleId = 5;
+        int vehicleId = 2;
         try {
             Vehicles foundVehicle = g.findById(vehicleId);
             System.out.println("Found vehicle: " + foundVehicle);
